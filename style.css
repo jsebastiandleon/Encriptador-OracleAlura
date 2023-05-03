@@ -142,6 +142,6 @@ footer{
 /*Tablet*/
 @media screen and (max-width:480px){
     body{
-        background-color: red;
+      /*  background-color: red; */
     }
 }
