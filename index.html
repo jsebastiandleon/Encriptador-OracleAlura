@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador alura - Challenge</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="./funcionesEncriptador.js"></script>
+        <script src="./funcionesDesencriptador.js"></script>
+        <script src="./funcionesGenerales.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap" rel="stylesheet">    
+    </head>
+    <body> 
+        <main>
+            <div class="logo">
+                <img src="Imagenes/Logo.png" alt="Logo Alura">
+            </div>
+            <div class="areaSalida">
+                <img class="imagenMunieco" id="imagenMunieco" src="Imagenes/Munieco.png" alt="Imagen niño con lupa, con texto de ningun mensaje fue encontrado">
+            </div>
+            <div class="bloqueTextoSalida" id="lemasNoEncontado">
+                <p>Ningun mensaje fue encontrado</p>
+                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <div class="areaIngresoTexto">
+                <form autocomplete="off">
+                  <textarea class="areaIngresoProp" name="areaIngreso" id="entradaTexto" cols="40" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                </form>
+            </div>
+            <div class="areaSalidaTexto">
+                <form autocomplete="off">
+                    <textarea class="areaSalidaProp" name="areaSalida" id="salidaTexto" cols="30" rows="20" readonly></textarea>
+                </form>
+            </div>
+            <div>
+                <form autocomplete="off">
+                    <input class="botonEncriptar" id="botonEncriptador" type="button" value="Encriptar" onclick="comprobadorCaracteres(1,document.getElementById('entradaTexto').value)">
+                </form>
+            </div>
+            <div>
+                <form autocomplete="off">
+                    <input class="botonDesencriptar" id="botonDesencriptador" type="button" value="Desencriptar" onclick="comprobadorCaracteres(2, document.getElementById('entradaTexto').value)">
+                </form>
+            </div>
+            <div>
+                <form autocomplete="off">
+                    <input class="botonUtilidades" id="botonCopiar" type="button" value="Copiar" onclick="copiarTexto(document.getElementById('salidaTexto').value)">
+                </form>
+            </div>
+            <div class="recordatorioTexto">
+                <img class="imgexclamacion" src="./Imagenes/Group.png" alt="simbolo de advertecia">
+                <p>Solo letras minúsculas, sin acentos y sin números.</p>
+            </div>
+        </main>
+        <footer>
+            <img class="logoAlurafooter" src="./Imagenes/Logo.png" alt="Logo Alura">
+        </footer>
+    </body>
+</html>

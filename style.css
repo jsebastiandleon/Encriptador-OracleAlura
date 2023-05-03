@@ -1,0 +1,147 @@
+body{
+    background-color: #F3F5FC;
+    font-family: 'Assistant', sans-serif;
+    width: auto;
+}
+.logo{
+    /* Posicion del logo*/
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    top: 40px;
+    left: 40px;
+    gap: 40px;
+}
+.areaSalida{
+    
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    left: 732px;
+    top: 40px;
+
+    /* White */
+    background: #FFFFFF;
+
+    /* shadow */
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    z-index: -1;
+}
+.imagenMunieco{
+    position: absolute;
+    width: 80%;
+    left: 50px;
+    top: 80px;
+}
+.bloqueTextoSalida{
+    position: absolute;
+    width: 25%;
+    left: 780px;
+    top: 480px;
+    text-align: center;
+}
+.areaIngresoTexto{
+    position: absolute;
+    width: 25%;
+    left: 200px;
+    top: 160px;
+    text-align: center;
+}
+.areaIngresoProp{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: #0A3871;
+}
+.areaSalidaProp{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    color: #495057;;
+}
+.areaSalidaTexto{
+    position: absolute;
+    width: 25%;
+    left: 780px;
+    top: 110px;
+    text-align: center;
+}
+#botonEncriptador{
+    position: absolute;
+    width: 15%;
+    left: 220px;
+    top: 570px;
+    padding: 10px 0;
+    font-weight: bold;
+    background-color: #07254A;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 14px;
+}
+#botonEncriptador:hover{
+    background: #fcf3f7;
+    color: black;
+}
+#botonDesencriptador{
+    position: absolute;
+    width: 15%;
+    left: 420px;
+    top: 570px;
+    padding: 10px 0;
+    font-weight: bold;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: none;
+    border-radius: 14px;
+}
+#botonDesencriptador:hover{
+    background: #fcf3f7;
+}
+.botonUtilidades{
+    position: absolute;
+    left: 830px;
+    top: 570px;
+}
+#botonCopiar{
+    width: 20%;
+    padding: 10px 0;
+    font-weight:bold;
+    background-color: #F3F5FC;
+    border: none;
+    border-radius: 14px;
+}
+#botonCopiar:hover{
+    background: #fcf3f7;
+}
+.logoAlurafooter{
+    width: auto; /*Aqui era 7%*/
+}
+.recordatorioTexto{
+    position: absolute;
+    width: auto; /*Aqui*/
+    left: 230px;
+    top: 530px;
+}
+.recordatorioTexto p{
+    display: inline-block;
+}
+.imgexclamacion{
+    float: left;
+}
+
+footer{
+    position: absolute;
+    background: background linear-gradient(to bottom, #F3F5FC, pink);;
+    top: 645px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Parte de responsividad de la página*/
+/*Tablet*/
+@media screen and (max-width:480px){
+    body{
+        background-color: red;
+    }
+}
