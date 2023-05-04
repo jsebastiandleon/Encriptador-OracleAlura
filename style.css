@@ -1,6 +1,6 @@
-html{
-    font-size: 100%;
-}
+* {
+    font-size: 16px;
+  }
 body{
     background-color: #F3F5FC;
     font-family: 'Assistant', sans-serif;
@@ -11,14 +11,13 @@ body{
     top: 10%;
     left: 5%;
 }
-.areaSalida{/*Listo con %*/
+.areaSalida{
 
     position: absolute;
     width: 30%;
     height: 75%;
     top: 10%;
     left: 65%;
-
     /* White */
     background: #FFFFFF;
     /* shadow */
@@ -27,13 +26,13 @@ body{
     border-radius: 7%;
     z-index: -1;
 }
-.imagenMunieco{/*Listo con %*/
+.imagenMunieco{
     position: absolute;
     width: 90%;
     top: 10%;
     left: 5%;
 }
-.bloqueTextoSalida{ /*Listo con %*/
+.bloqueTextoSalida{ 
     position: absolute;
     left: 66%;
     top: 70%;
@@ -41,32 +40,33 @@ body{
 }
 .bloqueTextoSalida p{
     font-size: 0.9em;
+
 }
-.areaIngresoTexto{/*Listo con %*/
+.areaIngresoTexto{
     position: absolute;
     top: 20%;
     left: 20%;
 }
-.areaIngresoProp{/*Listo, no hubo necesidad porcentajes*/  
+.areaIngresoProp{
     background-color: transparent;
     border: none;
     font-size: 1em;
     color: #0A3871;
 }
-.areaSalidaProp{/*Listo, no hubo necesidad porcentajes*/
+.areaSalidaProp{
     background-color: transparent;
     border: none;
     font-size: 1em;
-    color: #495057;;
+    color: #495057;
 }
-.areaSalidaTexto{/*Listo, con %*/
+.areaSalidaTexto{
     position: absolute;
     width: 25%;
     left: 67%;
     top: 15%;
     text-align: center;
 }
-#botonEncriptador{/*Listo, con %*/
+#botonEncriptador{
     position: absolute;
     width: 15%;
     top: 77%;
@@ -132,18 +132,120 @@ body{
     float: left;
 }
 
-footer{
-    position: absolute;
-    background: background linear-gradient(to bottom, #F3F5FC, pink);;
-    top: 645px;
-    width: 100%;
-    text-align: center;
-}
 
 /* Parte de responsividad de la página*/
 /*Tablet*/
-@media screen and (max-width:480px){
-    body{
-      /*  background-color: red; */
+@media (max-width: 440px) {
+    * {
+        font-size: 14px;
+      }
+    .logo{
+        position: absolute;
+        width: 20%;
+        top: 5%;
+        left: 5%;
+    }
+    .areaIngresoTexto{
+        position: absolute;
+        top: 15%;
+        left: 9%;
+    }
+    .areaIngresoProp{
+        background-color: white;
+        border: none;
+        font-size: 1em;
+        color: #0A3871;
+    }
+    .recordatorioTexto{
+        position: absolute;
+        left: 10%;
+        top: 45%;
+    }
+    .recordatorioTexto p{
+        display: inline-block;
+    }
+    .imgexclamacion{
+        float: left;
+    }
+    #botonEncriptador{
+        position: absolute;
+        width: 30%;
+        top: 50%;
+        left: 19%;
+        padding: 0.8% 0;
+        font-weight: bold;
+        background-color: #07254A;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 14px;
+        font-size: 0.8em;
+    }
+    #botonDesencriptador{
+        position: absolute;
+        width: 30%;
+        top: 50%;
+        left: 51%;
+        padding: 0.8% 0;
+        font-weight: bold;
+        font-size: 0.8em;
+        background-color: #D8DFE8;
+        color: #0A3871;
+        border: none;
+        border-radius: 14px;
+    }
+    .areaSalida{
+        position: absolute;
+        width: 70%;
+        height: 40%;
+        top: 54%;
+        left: 15%;
+        /* White */
+        background: #FFFFFF;
+        /* shadow */
+        box-shadow: 0em  1.33em 1.78em -0.44em rgba(0, 0, 0, 0.1);
+        border-radius: 7%;
+        z-index: -1;
+    }
+    .areaSalidaTexto{
+        position: absolute;
+        left: 17%;
+        top: 59%;
+        text-align: center;
+    }
+    .areaSalidaProp{
+        background-color:transparent;
+        border: none;
+        font-size: 1em;
+        color: #495057;
+    }
+    .imagenMunieco{
+        position: absolute;
+        width: 90%;
+        top: 10%;
+        left: 5%;
+    }
+    .bloqueTextoSalida{ 
+        position: absolute;
+        left: 18%;
+        top: 85%;
+        text-align: center;
+    }
+    .bloqueTextoSalida p{
+        font-size: 0.9em;
+    }
+    .botonUtilidades{
+        position: absolute;
+        top: 89%;
+        left: 40%;
+        font-size: 0.8em;
+    }
+    #botonCopiar{
+        width: 20%;
+        padding: 10px 0;
+        font-weight:bold;
+        font-size: 0.8em;
+        background-color: #F3F5FC;
+        border: none;
+        border-radius: 14px;
     }
 }
