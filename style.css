@@ -1,83 +1,83 @@
+html{
+    font-size: 100%;
+}
 body{
     background-color: #F3F5FC;
     font-family: 'Assistant', sans-serif;
-    width: auto;
 }
 .logo{
-    /* Posicion del logo*/
     position: absolute;
-    width: 120px;
-    height: 48px;
-    top: 40px;
-    left: 40px;
-    gap: 40px;
+    width: 20%;
+    top: 10%;
+    left: 5%;
 }
-.areaSalida{
-    
+.areaSalida{/*Listo con %*/
+
     position: absolute;
-    width: 400px;
-    height: 600px;
-    left: 732px;
-    top: 40px;
+    width: 30%;
+    height: 75%;
+    top: 10%;
+    left: 65%;
 
     /* White */
     background: #FFFFFF;
-
     /* shadow */
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 32px;
+    box-shadow: 0em  1.33em 1.78em -0.44em rgba(0, 0, 0, 0.1);
+
+    border-radius: 7%;
     z-index: -1;
 }
-.imagenMunieco{
+.imagenMunieco{/*Listo con %*/
     position: absolute;
-    width: 80%;
-    left: 50px;
-    top: 80px;
+    width: 90%;
+    top: 10%;
+    left: 5%;
 }
-.bloqueTextoSalida{
+.bloqueTextoSalida{ /*Listo con %*/
     position: absolute;
-    width: 25%;
-    left: 780px;
-    top: 480px;
+    left: 66%;
+    top: 70%;
     text-align: center;
 }
-.areaIngresoTexto{
-    position: absolute;
-    width: 25%;
-    left: 200px;
-    top: 160px;
-    text-align: center;
+.bloqueTextoSalida p{
+    font-size: 0.9em;
 }
-.areaIngresoProp{
+.areaIngresoTexto{/*Listo con %*/
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+.areaIngresoProp{/*Listo, no hubo necesidad porcentajes*/  
     background-color: transparent;
     border: none;
-    font-size: 18px;
+    font-size: 1em;
     color: #0A3871;
 }
-.areaSalidaProp{
+.areaSalidaProp{/*Listo, no hubo necesidad porcentajes*/
     background-color: transparent;
     border: none;
-    font-size: 18px;
+    font-size: 1em;
     color: #495057;;
 }
-.areaSalidaTexto{
+.areaSalidaTexto{/*Listo, con %*/
     position: absolute;
     width: 25%;
-    left: 780px;
-    top: 110px;
+    left: 67%;
+    top: 15%;
     text-align: center;
 }
-#botonEncriptador{
+#botonEncriptador{/*Listo, con %*/
     position: absolute;
     width: 15%;
-    left: 220px;
-    top: 570px;
-    padding: 10px 0;
+    top: 77%;
+    left: 20%;
+    padding: 0.8% 0;
     font-weight: bold;
     background-color: #07254A;
     color: #FFFFFF;
     border: none;
     border-radius: 14px;
+    font-size: 0.8em;
 }
 #botonEncriptador:hover{
     background: #fcf3f7;
@@ -86,10 +86,11 @@ body{
 #botonDesencriptador{
     position: absolute;
     width: 15%;
-    left: 420px;
-    top: 570px;
-    padding: 10px 0;
+    top: 77%;
+    left: 40%;
+    padding: 0.8% 0;
     font-weight: bold;
+    font-size: 0.8em;
     background-color: #D8DFE8;
     color: #0A3871;
     border: none;
@@ -100,13 +101,15 @@ body{
 }
 .botonUtilidades{
     position: absolute;
-    left: 830px;
-    top: 570px;
+    top: 77%;
+    left: 70%;
+    font-size: 0.8em;
 }
 #botonCopiar{
     width: 20%;
     padding: 10px 0;
     font-weight:bold;
+    font-size: 0.8em;
     background-color: #F3F5FC;
     border: none;
     border-radius: 14px;
@@ -115,13 +118,12 @@ body{
     background: #fcf3f7;
 }
 .logoAlurafooter{
-    width: auto; /*Aqui era 7%*/
+    width: 7%;
 }
 .recordatorioTexto{
     position: absolute;
-    width: auto; /*Aqui*/
-    left: 230px;
-    top: 530px;
+    left: 20%;
+    top: 73%;
 }
 .recordatorioTexto p{
     display: inline-block;
